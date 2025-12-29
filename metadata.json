@@ -1,0 +1,7 @@
+{
+  "name": "Samyak Civic Platform",
+  "description": "A futuristic, professional civic issue dashboard for a web platform called Samyak. Features include a multi-page interface for reporting issues, tracking complaints, an interactive map, a gamified rewards system, and an AI assistant.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

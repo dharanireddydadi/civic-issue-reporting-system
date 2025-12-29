@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samyak Civic Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@react-google-maps/api": "https://aistudiocdn.com/@react-google-maps/api@^2.19.3"
+  }
+}
+</script>
+  <style>
+      body {
+        background-color: #0b1020;
+      }
+      /* Webkit scrollbar styling */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(139, 92, 246, 0.4);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(139, 92, 246, 0.6);
+      }
+      
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fadeInUp {
+        animation: fadeInUp 0.6s ease-out forwards;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.5s ease-in-out forwards;
+      }
+
+      @keyframes fadeInRight {
+        from {
+          opacity: 0;
+          transform: translateX(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .animate-fadeInRight {
+        animation: fadeInRight 0.3s ease-out forwards;
+      }
+
+      @keyframes fadeOutRight {
+        from {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        to {
+          opacity: 0;
+          transform: translateX(20px);
+        }
+      }
+      .animate-fadeOutRight {
+        animation: fadeOutRight 0.3s ease-in forwards;
+      }
+      
+      @keyframes skeleton-loading {
+        0% { background-color: rgba(255, 255, 255, 0.05); }
+        100% { background-color: rgba(255, 255, 255, 0.1); }
+      }
+      .animate-skeleton {
+        animation: skeleton-loading 1.5s infinite alternate;
+      }
+      
+      @keyframes confetti-fall {
+          0% { transform: translateY(-20vh) rotateZ(0deg); opacity: 1; }
+          100% { transform: translateY(120vh) rotateZ(720deg); opacity: 0; }
+      }
+      .confetti {
+          position: fixed;
+          top: 0;
+          width: 10px;
+          height: 10px;
+          opacity: 0;
+          animation-name: confetti-fall;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+      }
+      
+      @keyframes sparkle {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.5); opacity: 0; }
+      }
+      .animate-sparkle {
+          animation: sparkle 1.5s ease-out infinite;
+      }
+
+      @keyframes blob {
+        0% {
+          transform: translate(0px, 0px) scale(1);
+        }
+        33% {
+          transform: translate(30px, -50px) scale(1.1);
+        }
+        66% {
+          transform: translate(-20px, 20px) scale(0.9);
+        }
+        100% {
+          transform: translate(0px, 0px) scale(1);
+        }
+      }
+      .animate-blob {
+        animation: blob 8s infinite;
+      }
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
